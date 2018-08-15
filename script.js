@@ -1,6 +1,6 @@
-function play() {
-    document.getElementById('vidwrap').innerHTML = '<iframe width="480" height="360" src="http://www.youtube.com/embed/7-7knsP2n5w?autoplay=1" frameborder="0"></iframe>';
-}
+// function play() {
+//     document.getElementById('vidwrap').innerHTML = '<iframe width="480" height="360" src="http://www.youtube.com/embed/7-7knsP2n5w?autoplay=1" frameborder="0"></iframe>';
+// }
 
 
 // poster frame click event
@@ -19,5 +19,9 @@ $(document).on('click','.js-videoPoster',function(ev) {
     $wrapper.addClass('videoWrapperActive');
     // add iframe src in, starting the video
     $iframe.attr('src',src);
+
+    // add styling
+    document.querySelector(".videoWrapper").setAttribute("style", "width: 843px; height: 506px; z-index: 1000; transform: translate(-275px, -19px");
+
   }
   
