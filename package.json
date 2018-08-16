@@ -1,0 +1,23 @@
+{
+  "name": "how-to-apply-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leopoldkwok/how-to-apply-video.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leopoldkwok/how-to-apply-video/issues"
+  },
+  "homepage": "https://github.com/leopoldkwok/how-to-apply-video#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

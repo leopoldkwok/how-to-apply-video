@@ -19,9 +19,44 @@ $(document).on('click','.js-videoPoster',function(ev) {
     $wrapper.addClass('videoWrapperActive');
     // add iframe src in, starting the video
     $iframe.attr('src',src);
-
-    // add styling
-    document.querySelector(".videoWrapper").setAttribute("style", "width: 843px; height: 506px; z-index: 1000; transform: translate(-275px, -19px");
-
+    
+    // add styling for video pop out for different breakpoints
+    if (window.matchMedia('(min-width: 1200px)').matches) {
+      document.querySelector(".videoWrapper").setAttribute("style", "width: 843px; height: 506px; z-index: 1000; transform: translate(-275px, -19px");
+      console.log('XL');
+    } else if (window.matchMedia('(min-width: 980px)').matches) {
+      document.querySelector(".videoWrapper").setAttribute("style", "width: 643px; height: 406px; z-index: 1000; transform: translate(-175px, -19px");
+      console.log('LG');
+    } 
   }
-  
+
+
+  // add a resize
+//   function myFunction(x) {
+//     if (x.matches && document.querySelector('.videoWrapperActive' !== null)) { // If media query matches
+//         document.body.style.backgroundColor = "yellow";
+//         console.log('it works');
+//     } else {
+//         document.body.style.backgroundColor = "pink";
+//     }
+// }
+
+// var x = window.matchMedia("(max-width: 700px)")
+// myFunction(x) // Call listener function at run time
+// x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+// $min-width: (
+//   xs: 0,
+//   sm: 480px,
+//   md: 768px,
+//   lg: 980px,
+//   xl: 1200px,
+// );
+// $max-width: (
+//   xs: 479px,
+//   sm: 767px,
+//   md: 979px,
+//   lg: 1199px,
+// );
