@@ -21,6 +21,3 @@ node_modules/
 *.rar
 *.tar
 *.zip
-
-# Only apps should have lockfiles
-package-lock.json
